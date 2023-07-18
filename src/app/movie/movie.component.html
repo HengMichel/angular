@@ -1,0 +1,12 @@
+<div class="movie">
+    <div class="image"><img [src]="movie.img" alt="image">
+    </div>
+    <div class="text">
+        <h1>{{movie.titre}}</h1>
+        <p>{{movie.description}}</p>
+        <button (click)="heartClick()" [style.color]="color"><i class="fa-solid fa-heart"></i></button>
+        <p>{{movie.likes}} likes</p>
+
+    </div>
+    
+</div>
