@@ -17,10 +17,6 @@ h1{
 p{
     color: white;
 }
-.fa-solid{
-    color: white;
-    font-size: 35px;
-}
 button{
     background-color: transparent;
     border: transparent;
@@ -29,4 +25,25 @@ button{
     width: 320px;
     height: 430px;
     display: block;
+}
+.coeur{
+    color: pink;
+}
+.heart{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+.aff{
+    text-align: end;
+    color: white;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+.fa-heart{
+    font-size: 50px;
+}
+.prix{
+    font-size: 35px;
+    color: rgb(243, 208, 10);
 }

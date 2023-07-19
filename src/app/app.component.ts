@@ -6,5 +6,6 @@ import { Movie } from './models/movie.model';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
- 
+ couleur = "pink";
+ laDate = new Date()
 }

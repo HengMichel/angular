@@ -1,10 +1,17 @@
 <div class="movie">
     <div class="image"><img [src]="movie.img" alt="image">
     </div>
-    <div class="text">
-        <h1>{{movie.titre}}</h1>
-        <p>{{movie.description}}</p>
-        <button (click)="heartClick()" [style.color]="color"><i class="fa-solid fa-heart"></i></button>
-        <p>{{movie.likes}} likes</p>
-    </div>   
+    <div class="aff">
+        <span (click)="remove()" [ngStyle]="{'font-size': '35px'}"><i class="fa-solid fa-x"></i></span>  
+        <div class="text">
+            <h1>{{movie.titre |titlecase}}</h1>
+            <p>{{movie.description}}</p>
+            <div class="heart">
+                <button [ngStyle]="{color : couleur}" (click)="heartClick()" ><i class="fa-solid fa-heart"></i></button>
+                <p>{{movie.likes}} likes</p>
+                
+            </div>
+            <p class="prix">{{movie.price | currency:'EUR'}}</p> 
+        </div>
+    </div>
 </div>
